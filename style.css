@@ -1,0 +1,49 @@
+table{
+    margin-top: 30px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    table-layout: fixed
+}
+table,td ,th{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+td{
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 1s;
+    height: 50px;
+    text-align: center;
+}
+td:hover{
+    background-color: rgba(0, 0, 0, 0.39);
+}
+.lastDayTd{
+    opacity: 50%;
+    background-color: rgba(0, 0, 0, 0.247);
+}
+.weakTd{
+    pointer-events: none;
+}
+
+.eventHystory-input{
+margin-top: 20px;
+width: 100%;
+justify-content: 100%;
+}
+#eventHystory{
+    border: 1px solid black;
+    margin-top: 20px;
+    min-height: 40px;
+    border-radius: 5px;
+    
+}
+.textArea{
+    width: 50%;
+
+}
+.submitEvent{
+    display: grid;
+
+
+}

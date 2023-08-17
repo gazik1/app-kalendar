@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <!-- 1 блок для года
+             2 блок для генерации ячеек с месяцем и днем
+             3 блок для истории событий и инпута ввода
+        -->
+
+        <!-- в инпут первого блока разрешить вводить только цифры и огранчить 4-х значными до 1970 -->
+        <div class="yearsBox"> 
+            
+            <input id="yearsInput" type="text" name="years" placeholder="Ведите год"> 
+            <button id="addYear" type="button">Выбрать год</button>
+            <button id="clearYear" type="button"> Убрать выбранный год</button> 
+            <button id="clearMouth" type="button">Убрать выбранный месяц</button>
+
+        
+        </div>
+        <div id="boxChoice"></div>
+
+
+
+        <!-- выбранный год месяц день храним в атрибутах -->
+        <table class="mouthBox-dayBox" state="" years="2000" mouth="11" day="26"></table>
+        <!-- state="day" || state="moth" -->
+
+
+     
+        <div class="eventHystory-input">
+            <div id="eventHystory"></div>
+        </div>
+
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
